@@ -2,26 +2,56 @@
 {
     padding: 0;
     margin: 0;
+        
 }
-.barra 
-{
+
+.contenedor-img-fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 25px;
+    top: 13%;
+    left: 0%;
+    right: 0px;
+    background-size: cover;
+    background: url("../Imagenes/imagen-pequeña-universidad.png");
+    margin: 0px;
+    padding: 0px;
+}
+.img-logo{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 79%;
+    top: -5%;
+    margin: 0px;
+    padding: 0px;
+    /* background-size: cover; */
+    background: url("../Imagenes/pequeñologo.png");
+    background-size: cover;
+}
+
+.barra{
+
     margin: 0;
     padding: 0;
     top: 0%;
     position: absolute;
     width: 100%;
     height: 15%;
-    background:   #fafafa   ;
+    background:   #5CB760   ;
 }
- .barra > img
-{
+
+ .barra > img{
+     
     margin-left: 2%;
     padding-left: 1%;
     height: 100%;
     opacity: 60%;
 }
-.barra > h1
-{
+
+.barra > h1{
+
     font-size: 300%;
     margin: 1px;
     margin-left: 2%;
@@ -34,27 +64,28 @@
     
     
 }
-#contenedor
-{
+#contenedor{
+
     width: 100%;
     height: 50%;
     position: absolute;
     top: 19%;
-    /* background-color: #313b99; */
+    /* background: rgba(66, 66, 66, 1); */
 }
-#bienvenida
-{
+
+#bienvenida{
+
     position: absolute;
     width: 80%;
     height:80%;
     margin: 1%;
     left: 15%;
-    top: -5%;
+    top: 1%;
     padding: 1%;
     background: #5CB760;
 }
-#bienvenida > h1
-{
+#bienvenida > h1{
+
     padding: 4%;
     margin: 2%; 
     font-family: Roboto;
@@ -64,8 +95,9 @@
     line-height: 42px;
     color: #ffffff;
 }
-#botonera
-{
+#botonera{
+
+    top: 6%;
     width: 13%;
     left: 1%;
     height:80%;
@@ -74,8 +106,9 @@
     position: relative;
     
 }
-ul
-{
+
+ul{
+
     text-decoration: none;
     bottom: 9%;
     right: 8%;
@@ -85,6 +118,7 @@ ul
     padding: 0%;
     height: 110%;
 }
+
 li{
 
     list-style: none;
@@ -100,8 +134,8 @@ li{
    
     
 }
-a
-{
+
+a{
     text-decoration: none;
     color: #FFFFFF;
     display: block;
@@ -117,18 +151,20 @@ a
     
     
 }
-footer
-{
+
+footer{
+
     text-transform: uppercase;
     position: fixed;
     bottom: 0%;
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: rgba(66, 66, 66, 1);
     
 }
-p
-{
+
+p{
+
     color: #e79c2a;
     text-align: center;
     padding-top: 1%;
@@ -136,8 +172,9 @@ p
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 130%;
 }
-a:hover
-{
+
+a:hover{
+
     color:#a2de96;
     background:#3ca59d;
 }

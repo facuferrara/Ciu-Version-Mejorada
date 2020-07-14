@@ -1,0 +1,246 @@
+@import "../index.css";
+
+.prueba
+{
+    transition: opacity 1s, transform 1s;
+    transition: all 1s ease-in-out;
+}
+
+.inicio
+{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+.barra 
+{
+    margin: 0;
+    padding: 0;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: rgba(255, 255, 255, 0.9);
+
+}
+ .barra > img
+{
+    padding-left: 1%;
+    height: 100%;
+    opacity: 60%;
+}
+.barra > h1
+{
+    margin: 0;
+    margin-left: 1%;
+    position: absolute;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    color: #000000;
+}
+.barraDeBotones
+{
+    margin-left: 1%;
+    position: absolute;
+    width: 98%;
+    height: 15%;
+    left: 0px;
+    top: 20%;
+    background: #FEFEFF;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.barraDeBotones > #nueva_solicitud:hover
+{
+    background-color: khaki;
+    transition: 1s;
+    font-size: 125%;
+    
+}
+.barraDeBotones > #modificar_solicitud:hover
+{
+    background-color: khaki;
+    transition: 1s;
+    font-size: 125%;
+}
+.barraDeBotones > #eliminar_solicitud:hover
+{
+    background-color: khaki;
+    transition: 1s;
+    font-size: 125%;
+}
+.barraDeBotones > button
+{
+    width: 15%;
+    height: 60%;
+    margin-left: 13%;
+    margin-top: 1%;
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.barraDeBotones > #nueva_solicitud
+{
+    background: #7EA2FE;  
+}
+.barraDeBotones > #modificar_solicitud
+{
+    background: #94FF79;
+}
+.barraDeBotones > #eliminar_solicitud
+{
+    background: #FF6C6C;
+}
+.tablaSolicitudes
+{
+    margin-left: 1%;
+    top: 38%;
+    position: absolute;
+    width: 98%;
+    height: 60%;
+    background: #FEFEFF;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.tablaSolicitudes > img
+{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 36%;
+    opacity: 15%;
+    border-radius: 0px 0px 200px 200px;
+    
+}
+table
+{
+   width: 100%;
+   font-size: 150%;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+tbody > tr {
+    font-size: 70%;  
+}
+.descripcion {
+    text-align: justify;
+}
+.salir
+{
+    font-size: 120%;
+    position: absolute;
+    width: 8%;
+    height:50%;
+    left: 90%;
+    top: 18%;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border-color:rosybrown;
+}
+#enviar
+{
+    background: rgba(5, 0, 255, 0.6);
+    border-radius: 10px;
+    top: 82%;
+    width: 10%;
+    height:10% ;
+    left: 42%;
+}
+/* MENU modificar solicitud */
+.menuDesplegable 
+{
+   
+        pointer-events: none;
+        opacity: 0.0;
+    
+    
+}
+/* MENU nueva solicitud */
+.isNuevaSolicitud
+{
+    pointer-events: none;
+    opacity: 0.0;
+}
+.nuevaSolicitud
+{
+    position: absolute;
+    top:39%;
+    width: 70%;
+    height: 57%;
+    left: 14%;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid #B4B0B0;
+
+}
+#imagenMenu
+{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 20%;
+    left: 30%;
+    opacity: 15%;
+    border-radius: 0px 0px 200px 200px;
+    pointer-events: none;
+    
+}
+#textoNuevaSolicitud
+{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 2%;
+    resize: none;
+    box-shadow: none;
+    
+}
+h4,h2,h3{
+    display: inline-block;
+}
+h4{
+    position: relative;
+    left: 20%;
+    font-size: 120%;
+}
+h2, h3{
+    left: 40%;
+    position: relative;
+}
+h2{
+    color: red;
+}
+#enviarSolicitud
+{
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    left: 37%;
+    top: 85%;
+    background: rgba(154, 200, 128, 0.99);
+    border: 1px solid #B4B0B0;
+    box-sizing: border-box;
+    border-radius: 50px;
+    /*Config font*/
+    color: #FFFFFF; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+#enviarSolicitud:hover
+{
+    transition: 2s;
+    background: orangered;
+    color:black;
+    font-size: 100%;
+}

@@ -33,8 +33,7 @@ function validarUsuario(){
             alert("La contraseñas no son identicas")
             return false;
         }
-        else 
-        {
+        else{
             return true;
         }
 }
