@@ -1,0 +1,141 @@
+body{
+  padding: 0%;
+  margin: 0%;
+}
+
+.inicio{
+
+  width: 100%;
+  height: 100%;
+}
+
+#img_unahur{
+
+  position: absolute;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 50%;
+  height: 80%;
+  left: 25%;
+  opacity: 20%;
+  background: url(Imagenes/imagen-pequeña-universidad.png);
+  border-radius: 0px 0px 200px 200px;
+}
+
+#texto-bienvenida{
+
+  position: absolute;
+  width: 1180px;
+  height: auto;
+  left: -30%;
+  top: -50%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 75px;
+  text-align: center;
+  color: #5CB760;
+}
+
+#contraseñaPerdida{
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 21px;
+  color: #4da823;
+  position:absolute;
+  left: 36%;
+  top: 50%;
+}
+
+/* #registrar > span
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  color: #4da823;
+
+} */
+
+#registrar{
+
+  text-decoration: none;
+  position:absolute;
+  top: 80%;
+  left: 36%;
+  color:blue;
+}
+
+#enviar{
+
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  left: 37%;
+  top: 60%;
+  background: rgba(154, 200, 128, 0.99);
+  border: 1px solid #B4B0B0;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #FFFFFF; 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.contraseña{
+
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  left: 30%;
+  top: 35%;
+  border: 1px solid #46a356;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 70%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+#usuario{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  left: 30%;
+  top: 20%;
+  text-align: center;
+  border: 1px solid #46a356;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 70%;
+
+
+}
+
+#square_login{
+
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  left: 420px;
+  top: 221px;
+  background: linear-gradient(180deg, rgba(92, 183, 96, 0.75) 0%, rgba(203, 29, 196, 0.75) 100%);
+  border: 4px solid #CB1DC4;
+  box-sizing: border-box;
+  border-radius: 0px 50px;
+
+  }

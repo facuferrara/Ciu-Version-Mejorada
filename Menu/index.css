@@ -1,0 +1,143 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.barra 
+{
+    margin: 0;
+    padding: 0;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background:   #fafafa   ;
+}
+ .barra > img
+{
+    margin-left: 2%;
+    padding-left: 1%;
+    height: 100%;
+    opacity: 60%;
+}
+.barra > h1
+{
+    font-size: 300%;
+    margin: 1px;
+    margin-left: 2%;
+    position: absolute;
+    top: 30%;
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    
+    
+}
+#contenedor
+{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 19%;
+    /* background-color: #313b99; */
+}
+#bienvenida
+{
+    position: absolute;
+    width: 80%;
+    height:80%;
+    margin: 1%;
+    left: 15%;
+    top: -5%;
+    padding: 1%;
+    background: #5CB760;
+}
+#bienvenida > h1
+{
+    padding: 4%;
+    margin: 2%; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 200%;
+    line-height: 42px;
+    color: #ffffff;
+}
+#botonera
+{
+    width: 13%;
+    left: 1%;
+    height:80%;
+    margin: 0%;
+    padding: 1%;
+    position: relative;
+    
+}
+ul
+{
+    text-decoration: none;
+    bottom: 9%;
+    right: 8%;
+    width: 116%;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    height: 110%;
+}
+li{
+
+    list-style: none;
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 140%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    height: 22%;
+    width: 100%;
+    right: 5%;
+    position: relative;
+    margin: 10px;
+    padding-top: 1px;
+    background: #313b99;
+    
+    
+    
+    
+}
+footer
+{
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 20%;
+    background: rgba(66, 66, 66, 1);
+    
+}
+p
+{
+    color: #e79c2a;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 130%;
+}
+a:hover
+{
+    color:#a2de96;
+    background:#3ca59d;
+}

@@ -1,0 +1,13 @@
+@media screen {  
+  #square_login{
+      left: 3%;
+      width: 95%;
+      height: 70%;
+  }
+  #contraseñaPerdida{
+      left: 30%;
+  }
+  #registrar{
+      left: 29%;
+  }
+}

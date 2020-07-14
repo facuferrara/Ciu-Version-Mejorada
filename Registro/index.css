@@ -1,0 +1,17 @@
+#contraseñaRepeat{
+
+    top:50%;
+}
+
+#enviar{
+
+    top:70%;
+}
+
+#restaurarContraseña{
+    position: absolute;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-top: auto;
+    color: aliceblue;
+}
