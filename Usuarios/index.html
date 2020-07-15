@@ -11,52 +11,50 @@
     <body onload="traer()">
         <img class="inicio" src="../imagenes/universidad.jpg">
         <div class="barra">
-            <div class="img-logo"></div>
-            <h1 class="dato">Departamento de acompañamiento de alumnos</h1>
-            <!-- <p class="dato">Departamento de acompañamiento de alumnos</p> -->
+            <div class="img-logoUser"></div>
+            <h1>Depatamento de acompañamiento de alumnos</h1>
             <div >
                 <button class="salir" onclick="salir()" > Salir</button>
             </div>
         </div>
         <div class="barraDeBotones">
-            <button id="nueva_solicitud" onclick="habilitarMenuNuevaSolicitud()">Nueva solicitud</button>
-            <button id="modificar_solicitud" onclick="habilitarMenu()" >Modificar solicitud</button>
-            <button id="eliminar_solicitud"  onclick="botonEliminar()">Eliminar solicitud</button>
+            
+            <button id="nuevo_usuario" onclick="habilitarMenuNuevaSolicitud()">Nuevo usuario</button>
+            <button id="modificar_usuario" onclick="habilitarMenu()" >Modificar usuario</button>
+            <button id="eliminar_usuario"  onclick="botonEliminar()">Eliminar usuario</button>
         </div>
-        <div class="tablaSolicitudes">
-            <table id="tablaSolicitudes">
+        <div class="tablaUsuarios">
+            <table id="tablaUsuarios">
                 <thead>
                     <tr>
-                        <th>Descripcion</th>
-                        <th>Estado</th>
-                        <th>Fecha de emision</th>
+                        <th>Avatar</th>
+                        <th>Nombre</th>
+                        <th>Activo</th>
                         <th><!-- CHECKBOX --></th>
                     </tr>  
                 </thead>  
-                <tbody id="datos_atraer">
+                <tbody id="datos_atraer_usuarios">
                     <tr >
                 
                     </tr>
                 </tbody>        
             </table>
         </div>
-        <div class="isNuevaSolicitud">            
-            <div class="nuevaSolicitud">
-                    <h4 class="solicitud">Nueva solicitud</h1>
-                    <h3 >Fecha de emision:</h1>
-                    <h2 id="fecha"></h1>
-                            <textarea id="textoNuevaSolicitud"  placeholder="Detalle"></textarea>
-                            <input id="enviarSolicitud" type="submit" value="Enviar" onclick="nuevaSolicitud()">
+        <div class="isNuevoUsuario">            
+            <div class="nuevoUsuario">
+                    <h2 class="solicitud">Nuevo usuario</h1>
+                          <textarea id="textoNuevoUsuario"  placeholder="Detalle"></textarea>
+                          <img id="imagenMenu"src="../imagenes/0.png">
+                          <input id="enviarUsuario" type="submit" value="Enviar" onclick="nuevaSolicitud()">
             </div>
         </div>
-
-        <div class="menuDesplegable">
+        
+        <div class="menuDesplegableUsuario">
             <textarea id="textoSolicitud" name="editarTexto" placeholder="solicitud a cambiar"></textarea>
             <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
         </div>
             
             
-        
         <script src="index.js"></script>
     </body>
     </html>

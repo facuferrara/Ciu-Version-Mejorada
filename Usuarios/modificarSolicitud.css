@@ -1,0 +1,13 @@
+textarea
+{
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 30%;
+    left: 25%;
+    box-shadow: none;
+    resize: none;
+    opacity: 90%;
+    text-align: center;
+    color:firebrick;
+}

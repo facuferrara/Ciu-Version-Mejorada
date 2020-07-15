@@ -13,20 +13,20 @@ function validarUsuario(){
             alert("Todos los campos son obligatorios!! ");
             return false;
         }
-        else if (!soloDigitos.test(usuario)){
-            alert("El usuario debe contener unicamente digitos ");
+        else if (usuario.length < 8){
+            alert("El usuario debe contener 8 digitos('un Dni')");
             return false;
         }
         else if (contraseña.length < 6){
             alert("La contraseña tiene debe contener al menos 6 caractes");
             return false;
         }
-        else if (!(caracteres.test(contraseña) && soloDigitos.test(contraseña))){
-            alert("La contraseña debe contener almenos una letra y un numero");
+        else if (!soloDigitos.test(usuario)){
+            alert("El usuario debe contener unicamente digitos ");
             return false;
         }
-        else if (usuario.length < 8){
-            alert("El usuario debe contener 8 digitos('un Dni')");
+        else if (!(caracteres.test(contraseña) && soloDigitos.test(contraseña))){
+            alert("La contraseña debe contener almenos una letra y un numero");
             return false;
         }
         else if (!(contraseña == contraseñaRepeat)){

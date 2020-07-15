@@ -1,41 +1,50 @@
-var datosFrontEnd = document.querySelector("#datos_atraer");
-var nueva_solicitud = document.getElementById("nueva_solicitud");
+var datosFrontEnd = document.querySelector("#datos_atraer_usuarios");
+var nuevo_usuario = document.getElementById("nuevo_usuario");
 var checkbox = document.querySelectorAll('input[type=checkbox]'); 
-var eliminarSolicitud = document.getElementById("eliminar_solicitud");
+var eliminarSolicitud = document.getElementById("eliminar_usuario");
 var botonEnviar = document.getElementById("enviar");
-var menu = document.querySelector(".menuDesplegable");
-var habilitarMenuNuevaSolicitudes = document.querySelector(".isNuevaSolicitud");
-
+var menu = document.querySelector(".menuDesplegableUsuario");
+var habilitarMenuNuevaSolicitudes = document.querySelector(".isNuevoUsuario"); 
+var misImagenes=[]
+function cargarImg()
+{
+    for (let index = 0; index < 16; index++) {
+        misImagenes.push(`../imagenes/avatars/${index+1}.png`)
+    }
+    
+}
 function salir()
+
 {
 
     window.location.href = "../index.html";
 }
 function habilitarMenuNuevaSolicitud()
 {
-    habilitarMenuNuevaSolicitudes.classList.toggle("isNuevaSolicitud");
+    habilitarMenuNuevaSolicitudes.classList.toggle("isNuevoUsuario");
     habilitarMenuNuevaSolicitudes.classList.toggle("prueba");
 }
 function nuevaSolicitud()
 {
+    
     var numeroDeFilas = document.getElementsByName('descripcion').length;
     datosFrontEnd.innerHTML +=
     `
     <tr id="${document.getElementsByName('descripcion').length} "name="filas">
-        <th class="descripcion"  name="descripcion">${document.querySelector("#textoNuevaSolicitud").value}</th>
+        <th><img width="40" height="40" src="${misImagenes[Math.round(Math.random()*15)]}"></img></th>
+        <th class="descripcion"  name="descripcion">${document.querySelector("#textoNuevoUsuario").value}</th>
         <th>${false}</th>
-        <th>${hora.innerHTML}</th>
         <th><input type="checkbox"  name="check" onclick="onlyOne(this)"></th>
      </tr>  
     `;
         if(document.getElementsByName('descripcion').length!==numeroDeFilas)
-        {borrarTexto("#textoNuevaSolicitud");habilitarMenuNuevaSolicitud()}
+        {borrarTexto("#textoNuevoUsuario");habilitarMenuNuevaSolicitud()}
     
 }
 
 function  habilitarMenu()
 {
-    menu.classList.toggle("menuDesplegable");
+    menu.classList.toggle("menuDesplegableUsuario");
     menu.classList.toggle("prueba");
 }
 function borrarTexto(id)
@@ -76,41 +85,29 @@ function onlyOne(checkbox) {
 }
 
 function traer(){
-    fetch('index.json')
-    .then(res => res.json())
-      .then(datos =>
-          {
-              tabla(datos);
-           })
+      fetch('index.json')
+      .then(res => res.json())
+        .then(datos =>
+            {
+                tabla(datos);
+             })
 }
 function tabla(datos)
 {
+    
     var contadorTr =0;
     for (let valor of datos) {
         datosFrontEnd.innerHTML +=
         `
         <tr id="${contadorTr} "name="filas">
-            <th class="descripcion"  name="descripcion">${valor.Descripción}</th>
-            <th>${valor.Estado}</th>
-            <th>${valor.Fecha}</th>
+            <th  ><img width="40" height="40" src="${misImagenes[Math.round(Math.random()*15)]}"></svg></th>
+            <th class="descripcion" name="descripcion">${valor.Nombre}</th>
+            <th>${valor.Activo}</th>
             <th><input type="checkbox"  name="check" onclick="onlyOne(this)"></th>
          </tr>  
         `
         contadorTr++;
     }
 }
-//NUEVA SOLICITUD
-var hora = document.getElementById("fecha");
-function showTime(){
-    myDate = new Date();
-    dia = myDate.getDate();
-    mes = myDate.getMonth()+1;
-    año = myDate.getFullYear();
-    if (dia < 10) dia = 0 + dia;
-    if (mes < 10) mes = "0" + mes;
-    if (año < 10) año = "0" + año;
-    hora.innerHTML =`${dia}/${mes}/${año}`;
-    setTimeout("showTime()", 5000);
-    
-}
-showTime();
+cargarImg()
+console.log(misImagenes)

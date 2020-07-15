@@ -1,36 +1,37 @@
 @import "../index.css";
 
-.prueba
-{
+.prueba{
+
     transition: opacity 1s, transform 1s;
     transition: all 1s ease-in-out;
 }
 
-.inicio
-{
+.inicio{
+
     position: absolute;
     padding: 0;
     margin: 0;
 }
-.barra 
-{
+
+.barra{
+    
     margin: 0;
     padding: 0;
     top: 0%;
     position: absolute;
     width: 100%;
     height: 15%;
-    background: rgba(255, 255, 255, 0.9);
+    background: #5CB760;
 
 }
- .barra > img
-{
+ .barra > img{
+
     padding-left: 1%;
     height: 100%;
     opacity: 60%;
 }
-.barra > h1
-{
+.barra > h1{
+
     margin: 0;
     margin-left: 1%;
     position: absolute;
@@ -39,65 +40,66 @@
     display: inline-block;
     color: #000000;
 }
-.barraDeBotones
-{
-    margin-left: 1%;
+
+.barraDeBotones{
+
+    margin-left: 0%;
     position: absolute;
-    width: 98%;
+    width: 100%;
     height: 15%;
     left: 0px;
-    top: 20%;
-    background: #FEFEFF;
-    opacity: 0.9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    top: 15%;
+    background: #5CB760;
+    box-shadow: 0px 4px 4px rgba(141, 31, 31, 0.25);
+
 }
 
-.barraDeBotones > #nueva_solicitud:hover
-{
-    background-color: khaki;
-    transition: 1s;
-    font-size: 125%;
-    
+.dato{
+    left: 26%;
 }
-.barraDeBotones > #modificar_solicitud:hover
-{
-    background-color: khaki;
-    transition: 1s;
-    font-size: 125%;
-}
-.barraDeBotones > #eliminar_solicitud:hover
-{
-    background-color: khaki;
-    transition: 1s;
-    font-size: 125%;
-}
-.barraDeBotones > button
-{
+
+.barraDeBotones > button{
+
     width: 15%;
     height: 60%;
     margin-left: 13%;
-    margin-top: 1%;
+    margin-top: 2%;
     background-color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
     border-radius: 10px;
     text-align: center;
 }
-.barraDeBotones > #nueva_solicitud
-{
+
+.barraDeBotones > #nueva_solicitud{
+
     background: #7EA2FE;  
 }
-.barraDeBotones > #modificar_solicitud
-{
-    background: #94FF79;
+
+.barraDeBotones > #modificar_solicitud{
+
+    background: #7EA2FE;
 }
-.barraDeBotones > #eliminar_solicitud
-{
-    background: #FF6C6C;
+
+.barraDeBotones > #eliminar_solicitud{
+
+    background: #7EA2FE;
 }
-.tablaSolicitudes
-{
+
+.img-logo{
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    left: 0%;
+    top: -5%;
+    margin: 0px;
+    padding: 0px;
+    /* background-size: cover; */
+    background: url("../Imagenes/pequeñologo.png");
+    background-size: cover;
+}
+.tablaSolicitudes{
+
     margin-left: 1%;
     top: 38%;
     position: absolute;
@@ -108,8 +110,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
-.tablaSolicitudes > img
-{
+
+.tablaSolicitudes > img{
+
     position: absolute;
     width: 30%;
     height: 80%;
@@ -119,8 +122,9 @@
     border-radius: 0px 0px 200px 200px;
     
 }
-table
-{
+
+table{
+
    width: 100%;
    font-size: 150%;
    font-family: 'Times New Roman', Times, serif;
@@ -129,23 +133,26 @@ table
 tbody > tr {
     font-size: 70%;  
 }
+
 .descripcion {
     text-align: justify;
 }
-.salir
-{
+
+.salir{
+
     font-size: 120%;
     position: absolute;
     width: 8%;
     height:50%;
     left: 90%;
     top: 18%;
-    background: #C4C4C4;
+    background: #d33c0e;
     border-radius: 10px;
     border-color:rosybrown;
 }
-#enviar
-{
+
+#enviar{
+
     background: rgba(5, 0, 255, 0.6);
     border-radius: 10px;
     top: 82%;
@@ -153,35 +160,38 @@ tbody > tr {
     height:10% ;
     left: 42%;
 }
-/* MENU modificar solicitud */
-.menuDesplegable 
-{
+/*  modificar solicitud */
+
+.menuDesplegable {
    
-        pointer-events: none;
-        opacity: 0.0;
+    pointer-events: none;
+    opacity: 0.0;
     
     
 }
-/* MENU nueva solicitud */
-.isNuevaSolicitud
-{
+
+/*  nueva solicitud */
+.isNuevaSolicitud{
+
     pointer-events: none;
     opacity: 0.0;
 }
-.nuevaSolicitud
-{
+
+.nuevaSolicitud{
+
     position: absolute;
     top:39%;
     width: 70%;
     height: 57%;
     left: 14%;
-    background-color:white;
+    background-color:rgb(226, 216, 216);
     border-radius: 10px;
     border: 1px solid #B4B0B0;
 
 }
-#imagenMenu
-{
+
+#imagenMenu{
+
     position: absolute;
     width: 40%;
     height: 60%;
@@ -192,8 +202,9 @@ tbody > tr {
     pointer-events: none;
     
 }
-#textoNuevaSolicitud
-{
+
+#textoNuevaSolicitud{
+
     position: relative;
     width: 60%;
     height: 60%;
@@ -203,23 +214,29 @@ tbody > tr {
     box-shadow: none;
     
 }
+
 h4,h2,h3{
+
     display: inline-block;
 }
+
 h4{
     position: relative;
     left: 20%;
     font-size: 120%;
 }
+
 h2, h3{
     left: 40%;
     position: relative;
 }
+
 h2{
     color: red;
 }
-#enviarSolicitud
-{
+
+#enviarSolicitud{
+
     position: absolute;
     width: 25%;
     height: 10%;
@@ -229,7 +246,6 @@ h2{
     border: 1px solid #B4B0B0;
     box-sizing: border-box;
     border-radius: 50px;
-    /*Config font*/
     color: #FFFFFF; 
     font-family: Roboto;
     font-style: normal;
@@ -237,10 +253,65 @@ h2{
     font-size: 24px;
     line-height: 28px;
 }
-#enviarSolicitud:hover
-{
-    transition: 2s;
-    background: orangered;
-    color:black;
-    font-size: 100%;
+
+/* \\\\\\ ----> LA VERSION MOVIL ESTA DISEÑADA PARA UNA RESOLUCION DE 320 X 620  PX   <----////////     */
+@media all and (max-device-width: 480px){
+
+    .img-logo{
+        position: absolute;
+        width: 100% ;
+        height: 100%;
+        left: 0%;
+        top: -5%;
+        margin: 0px;
+        padding: 0px;
+        background: url("../Imagenes/pequeñin.jpg");
+        background-repeat: no-repeat;
+    }
+    .salir{
+
+        font-size: 100%;
+        width: 12%;
+        height:20%;
+        left: 87%;
+        top: 1%;
+        
+    }
+    .dato{
+        left: 50%;
+        font-size: 140%;
+        /* top: 80%; */
+    }
+    .barraDeBotones{
+
+        top: 22%;
+    }
+    .barra{
+    
+        margin: 0;
+        padding: 0;
+        top: 0%;
+        position: absolute;
+        width: 100%;
+        height: 33%;
+        background: #5CB760;
+    
+    }
+    .barraDeBotones > #nueva_solicitud ,#modificar_solicitud, #eliminar_solicitud{
+
+        margin-left: auto;
+        left: 0%;
+        width: 20%;
+    }
+    #textoNuevaSolicitud{
+
+        width: 50%;
+        height: 55%;
+        left: -8%;
+        top: 2%;
+        
+        
+    }
+
+    
 }

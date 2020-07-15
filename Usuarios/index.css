@@ -1,0 +1,285 @@
+@import "../index.css";
+
+.prueba{
+
+  transition: opacity 1s, transform 1s;
+  transition: all 1s ease-in-out;
+}
+
+.inicio{
+
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+.barra {
+
+  margin: 0;
+  padding: 0;
+  top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #5CB760;
+
+}
+
+ .barra > img{
+
+  padding-left: 1%;
+  height: 100%;
+  opacity: 60%;
+}
+
+.barra > h1{
+
+  margin: 0;
+  margin-left: 1%;
+  position: absolute;
+  top: 30%;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  color: #000000;
+}
+
+.barraDeBotones{
+
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  left: 0px;
+  top: 15%;
+  background: #5CB760;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.barraDeBotones > button{
+
+  width: 15%;
+  height: 60%;
+  margin-left: 13%;
+  margin-top: 1%;
+  background-color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.barraDeBotones > #nuevo_usuario{
+
+  background: #7EA2FE;  
+}
+
+.barraDeBotones > #modificar_usuario{
+
+  background: #7EA2FE;
+}
+
+.barraDeBotones > #eliminar_usuario{
+
+  background: #7EA2FE;
+}
+
+.img-logoUser{
+  position: absolute;
+  width: 100% ;
+  height: 100%;
+  left: 0%;
+  top: -5%;
+  margin: 0px;
+  padding: 0px;
+  background: url("../Imagenes/pequeñin.jpg");
+  background-repeat: no-repeat;
+}
+.tablaUsuarios{
+
+  margin-left: 1%;
+  top: 38%;
+  position: absolute;
+  width: 98%;
+  height: 60%;
+  background: #FEFEFF;
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.tablaUsuarios > img{
+
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  margin-top: 4%;
+  margin-left: 36%;
+  opacity: 15%;
+  border-radius: 0px 0px 200px 200px;
+    
+}
+
+table{
+
+  width: 100%;
+  font-size: 150%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+tbody > tr {
+font-size: 50%;  
+}
+
+.descripcion {
+  Text-align:center;
+}
+
+.salir{
+
+  font-size: 100%;
+  position: absolute;
+  width: 8%;
+  height:50%;
+  left: 90%;
+  top: 24%;
+  background: #d33c0e;
+  border-radius: 10px;
+  border-color:rosybrown;
+}
+
+#enviar{
+
+  background: rgba(5, 0, 255, 0.6);
+  border-radius: 10px;
+  top: 82%;
+  width: 10%;
+  height:10% ;
+  left: 42%;
+}
+
+
+/*  modificar solicitud */
+.menuDesplegableUsuario {
+
+  pointer-events: none;
+  opacity: 0.0;
+    
+}
+
+/*  nueva solicitud */
+.isNuevoUsuario{
+
+  pointer-events: none;
+  opacity: 0.0;
+}
+
+.nuevoUsuario{
+
+  position: absolute;
+  top:39%;
+  width: 70%;
+  height: 57%;
+  left: 14%;
+  background-color:white;
+  border-radius: 10px;
+  border: 1px solid #B4B0B0;
+
+}
+
+#imagenMenu{
+
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 20%;
+  left: 30%;
+  opacity: 15%;
+  border-radius: 0px 0px 200px 200px;
+  pointer-events: none;
+    
+}
+#textoNuevoUsuario{
+
+  position: relative;
+  width: 62%;
+  height: 60%;
+  left: 20%;
+  top: 2%;
+  resize: none;
+  box-shadow: none;
+    
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#enviarUsuario{
+
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  left: 37%;
+  top: 85%;
+  background: rgba(154, 200, 128, 0.99);
+  border: 1px solid #B4B0B0;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #FFFFFF; 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+/* \\\\\\ ----> LA VERSION MOVIL ESTA DISEÑADA PARA UNA RESOLUCION DE 320 X 620  PX   <----////////     */
+@media all and (max-device-width: 480px){
+
+  .barra {
+
+    margin: 0;
+    padding: 0;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: #5CB760;
+  
+  }
+  .barraDeBotones{
+
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    left: 0px;
+    top: 10%;
+    background: #5CB760;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      
+  }
+
+  .img-logoUser{
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    left: 0%;
+    top: -5%;
+    margin: 0px;
+    padding: 0px;
+    background: url("../Imagenes/logoMovil.png");
+    background-repeat: no-repeat;
+  }
+
+  .barra > h1{
+
+    margin: 0;
+    margin-left: 25%;
+    font-size: medium;
+    position: center;
+    top: 40%;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    color: #000000;
+  }
+}
