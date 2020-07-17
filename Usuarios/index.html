@@ -4,15 +4,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="modificarSolicitud.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="stylesheet" href="modificarUser.css">
     <title>Solicitudes</title>
 </head>
     <body onload="traerJson()">
         <img class="inicio" src="../imagenes/universidad.jpg">
         <div class="barra">
             <div class="img-logoUser"></div>
-            <h1>Depatamento de acompañamiento de alumnos</h1>
+            <h1 class="infoSuperior">Listado de Usuarios Registrados</h1>
             <div >
                 <button class="salir" onclick="salir()" > Salir</button>
             </div>
@@ -40,10 +40,12 @@
                 </tbody>        
             </table>
         </div>
-        <div class="isNuevoUsuario">            
+        <div class="queryNuevoUsuario">            
             <div class="nuevoUsuario">
-                    <h2 class="solicitud">Nuevo usuario</h1>
-                          <textarea id="textoNuevoUsuario"  placeholder="Detalle"></textarea>
+                    <h2 class="solicitud">Nuevo usuario</h2>
+                    <h3 >Fecha de emision:</h1>
+                        <h4 id="fechaUser"></h4>
+                          <textarea id="textoNuevoUsuario"  placeholder="Inserte su Nombre de Usuario"></textarea>
                           <input id="enviarUsuario" type="submit" value="Enviar" onclick="nuevoUser()">
             </div>
         </div>
@@ -55,8 +57,6 @@
                 <input id="enviar" type="submit" value="Guardar" onclick="modificarUser()">
             </div>
         </div>
-            
-            
         <script src="users.js"></script>
     </body>
     </html>

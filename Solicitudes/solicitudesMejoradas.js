@@ -14,7 +14,6 @@ function salir(){
 
 function habilitarMenuNuevaSolicitud(){
 
-
     habilitarMenuNuevaSolicitudes.classList.toggle("isNuevaSolicitud");
     habilitarMenuNuevaSolicitudes.classList.toggle("prueba");
 }
@@ -32,8 +31,9 @@ function nuevaSolicitud(){
         <th><input type="checkbox"  name="check" onclick="onlyOne(this)"></th>
      </tr>  
     `;
-        if(document.getElementsByName('descripcion').length!==numeroDeFilas)
-        {borrarTexto("#textoNuevaSolicitud");habilitarMenuNuevaSolicitud()}
+        if(document.getElementsByName('descripcion').length!==numeroDeFilas){
+            borrarTexto("#textoNuevaSolicitud");habilitarMenuNuevaSolicitud()
+        }
     
 }
 
@@ -51,12 +51,12 @@ function borrarTexto(id){
 function botonEliminar(){
 
     var checkboxes = document.getElementsByName('check');
-    for (let i = 0; i <  checkboxes.length; i++) {
+    for (let i = 0; i <  checkboxes.length; i++){
+
         var filas = document.getElementsByName('filas');
-        if(checkboxes[i].checked)
-            {
+        if(checkboxes[i].checked){
                 filas[i].remove();
-            }
+        }
     }
 }
 
@@ -64,16 +64,17 @@ function botonEliminar(){
     
     var descripcion = document.getElementsByName('descripcion');
     var checkboxes = document.getElementsByName('check');
+
     for (let i = 0; i <  checkboxes.length; i++) {
-        if(checkboxes[i].checked)
-            {
-                var textoViejo = descripcion[i].value;
-                    descripcion[i].innerHTML=`${document.querySelector("#textoSolicitud").value}`
-                        if(textoViejo!==descripcion[i]){borrarTexto("#textoSolicitud");habilitarMenu();}
+        if(checkboxes[i].checked){
+            var textoViejo = descripcion[i].value;
+            descripcion[i].innerHTML=`${document.querySelector("#textoSolicitud").value}`
+                if(textoViejo!==descripcion[i]){
+                    borrarTexto("#textoSolicitud");habilitarMenu();
+                }
             }
     }
 }
-
 
 function traerDatos(){
     
@@ -84,8 +85,6 @@ function traerDatos(){
             tabla(datos);
         })
     }
-    
-    
     
     
     function tabla(datos){
@@ -106,8 +105,7 @@ function traerDatos(){
     }
     
     
-    
-    //Nuevas solicitudes
+    //Nuevas solicitudes  datos actualizados de la fecha mes y año
     var hora = document.getElementById("fecha");
     function showTime(){
         myDate = new Date();
@@ -125,14 +123,11 @@ function traerDatos(){
     }
     
     
-    
     function onlyOne(checkbox) {
         var checkboxes = document.getElementsByName('check')
         checkboxes.forEach((item) => {
             if (item !== checkbox) item.checked = false
         })
     }
-    
-    
-    
-    showTime();
+
+showTime();
