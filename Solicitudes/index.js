@@ -75,7 +75,7 @@ function botonEliminar(){
 }
 
 
-function traer(){
+function traerDatos(){
     
     fetch('solicitudes.json')
     .then(res => res.json())

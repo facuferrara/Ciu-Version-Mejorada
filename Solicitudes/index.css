@@ -103,11 +103,11 @@
     position: absolute;
     width: 100% ;
     height: 100%;
-    left: 0%;
-    top: -5%;
+    left: 2%;
+    top: 20%;
     margin: 0px;
     padding: 0px;
-    background: url("../Imagenes/pequeñin.jpg");
+    background: url("../Imagenes/logoMovil.png");
     background-repeat: no-repeat;
 }
 .tablaSolicitudes{
@@ -234,8 +234,8 @@ tbody > tr {
     position: relative;
     width: 60%;
     height: 60%;
-    left: 10%;
-    top: -42%;
+    left: 20%;
+    top: -110%;
     resize: none;
     box-shadow: none;
     font-size: 180%;
@@ -255,9 +255,9 @@ h4,h2,h3{
 }
 
 h4{
-    top: -20%;
+    top: -110%;
     position: relative;
-    left: 8%;
+    margin-left: 28%;
     font-size: 160%;
 }
 

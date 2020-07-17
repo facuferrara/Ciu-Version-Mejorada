@@ -4,30 +4,24 @@ var checkbox = document.querySelectorAll('input[type=checkbox]');
 var eliminarSolicitud = document.getElementById("eliminar_usuario");
 var botonEnviar = document.getElementById("enviar");
 var menu = document.querySelector(".menuDesplegableUsuario");
-var habilitarMenuNuevaSolicitudes = document.querySelector(".isNuevoUsuario"); 
+var habilitarDeNuevoUser = document.querySelector(".isNuevoUsuario"); 
 var misImagenes=[]
-function cargarImg()
-{
-    for (let index = 0; index < 16; index++) {
-        misImagenes.push(`../imagenes/avatars/${index+1}.png`)
-    }
-    
-}
+
+
 function salir(){
     
     window.location.href = "../index.html";
 }
 
-function habilitarMenuNuevaSolicitud(){
+function habilitarMenuNuevoUser(){
 
-    habilitarMenuNuevaSolicitudes.classList.toggle("isNuevoUsuario");
-    habilitarMenuNuevaSolicitudes.classList.toggle("prueba");
+    habilitarDeNuevoUser.classList.toggle("isNuevoUsuario");
+    habilitarDeNuevoUser.classList.toggle("prueba");
 }
 
 
-function nuevaSolicitud(){
+function nuevoUser(){
 
-    
     var numeroDeFilas = document.getElementsByName('descripcion').length;
     datosATraer.innerHTML +=
     `
@@ -40,7 +34,7 @@ function nuevaSolicitud(){
     `;
         if(document.getElementsByName('descripcion').length!==numeroDeFilas)
         {
-            borrarTexto("#textoNuevoUsuario");habilitarMenuNuevaSolicitud()
+            borrarTexto("#textoNuevoUsuario");habilitarMenuNuevoUser()
     }
     
 }
@@ -48,7 +42,7 @@ function nuevaSolicitud(){
 function  habilitarMenu(){
 
     menu.classList.toggle("menuDesplegableUsuario");
-    menu.classList.toggle("prueba");
+    
 }
 
 function borrarTexto(id){
@@ -56,7 +50,7 @@ function borrarTexto(id){
     document.querySelector(id).value = ``
 }
 
-
+// Botones -->>
 
 function botonEliminar(){
 
@@ -70,7 +64,7 @@ function botonEliminar(){
     }
 }
 
- function modificarSolicitudes(){
+ function modificarUser(){
 
     
     var descripcion = document.getElementsByName('descripcion');
@@ -79,13 +73,13 @@ function botonEliminar(){
         if(checkboxes[i].checked)
             {
                 var textoViejo = descripcion[i].value;
-                    descripcion[i].innerHTML=`${document.querySelector("#textoSolicitud").value}`
-                        if(textoViejo!==descripcion[i]){borrarTexto("#textoSolicitud");habilitarMenu();}
+                    descripcion[i].innerHTML=`${document.querySelector("#textoModifUser").value}`
+                        if(textoViejo!==descripcion[i]){borrarTexto("#textoModifUser");habilitarMenu();}
             }
     }
 }
 
-//funcion para agregar el check dentro de los users
+//check individual
 
 function onlyOne(checkbox) {
     var checkboxs = document.getElementsByName('check')
@@ -94,7 +88,16 @@ function onlyOne(checkbox) {
     })
 }
 
-function traer(){
+//funcion para traer el avatar de forma random
+function cargarImg(){
+
+    for (let index = 0; index < 16; index++) {
+        misImagenes.push(`../imagenes/avatars/${index+1}.png`)
+    }
+    
+}
+
+function traerJson(){
 
       fetch('index.json')
       .then(res => res.json())
@@ -122,4 +125,3 @@ function tabla(datos){
 }
 
 cargarImg()
-console.log(misImagenes)

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="modificarSolicitud.css">
     <title>Solicitudes</title>
 </head>
-    <body onload="traer()">
+    <body onload="traerJson()">
         <img class="inicio" src="../imagenes/universidad.jpg">
         <div class="barra">
             <div class="img-logoUser"></div>
@@ -17,9 +17,9 @@
                 <button class="salir" onclick="salir()" > Salir</button>
             </div>
         </div>
-        <div class="barraDeBotones">
+        <div class="contenedorBotones">
             
-            <button id="nuevo_usuario" onclick="habilitarMenuNuevaSolicitud()">Nuevo usuario</button>
+            <button id="nuevo_usuario" onclick="habilitarMenuNuevoUser()">Nuevo usuario</button>
             <button id="modificar_usuario" onclick="habilitarMenu()" >Modificar usuario</button>
             <button id="eliminar_usuario"  onclick="botonEliminar()">Eliminar usuario</button>
         </div>
@@ -44,7 +44,7 @@
             <div class="nuevoUsuario">
                     <h2 class="solicitud">Nuevo usuario</h1>
                           <textarea id="textoNuevoUsuario"  placeholder="Detalle"></textarea>
-                          <input id="enviarUsuario" type="submit" value="Enviar" onclick="nuevaSolicitud()">
+                          <input id="enviarUsuario" type="submit" value="Enviar" onclick="nuevoUser()">
             </div>
         </div>
         
@@ -52,11 +52,11 @@
             <div class="modificarUsuario">
                 <h3 id="textoAModificar">Modificar Usuario</h3>
                 <textarea id="textoModifUser" name="editarTexto" placeholder="Usuario a modificar"></textarea>
-                <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
+                <input id="enviar" type="submit" value="Guardar" onclick="modificarUser()">
             </div>
         </div>
             
             
-        <script src="index.js"></script>
+        <script src="users.js"></script>
     </body>
     </html>
