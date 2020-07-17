@@ -30,7 +30,7 @@
                         <th>Avatar</th>
                         <th>Nombre</th>
                         <th>Activo</th>
-                        <th><!-- CHECKBOX --></th>
+                        <th><!-- CHECKBOXSS --></th>
                     </tr>  
                 </thead>  
                 <tbody id="datos_atraer_usuarios">
@@ -44,14 +44,16 @@
             <div class="nuevoUsuario">
                     <h2 class="solicitud">Nuevo usuario</h1>
                           <textarea id="textoNuevoUsuario"  placeholder="Detalle"></textarea>
-                          <img id="imagenMenu"src="../imagenes/0.png">
                           <input id="enviarUsuario" type="submit" value="Enviar" onclick="nuevaSolicitud()">
             </div>
         </div>
         
         <div class="menuDesplegableUsuario">
-            <textarea id="textoSolicitud" name="editarTexto" placeholder="solicitud a cambiar"></textarea>
-            <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
+            <div class="modificarUsuario">
+                <h3 id="textoAModificar">Modificar Usuario</h3>
+                <textarea id="textoModifUser" name="editarTexto" placeholder="Usuario a modificar"></textarea>
+                <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
+            </div>
         </div>
             
             

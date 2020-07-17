@@ -1,4 +1,4 @@
-var datosFrontEnd = document.querySelector("#datos_atraer_usuarios");
+var datosATraer = document.querySelector("#datos_atraer_usuarios");
 var nuevo_usuario = document.getElementById("nuevo_usuario");
 var checkbox = document.querySelectorAll('input[type=checkbox]'); 
 var eliminarSolicitud = document.getElementById("eliminar_usuario");
@@ -13,22 +13,23 @@ function cargarImg()
     }
     
 }
-function salir()
-
-{
-
+function salir(){
+    
     window.location.href = "../index.html";
 }
-function habilitarMenuNuevaSolicitud()
-{
+
+function habilitarMenuNuevaSolicitud(){
+
     habilitarMenuNuevaSolicitudes.classList.toggle("isNuevoUsuario");
     habilitarMenuNuevaSolicitudes.classList.toggle("prueba");
 }
-function nuevaSolicitud()
-{
+
+
+function nuevaSolicitud(){
+
     
     var numeroDeFilas = document.getElementsByName('descripcion').length;
-    datosFrontEnd.innerHTML +=
+    datosATraer.innerHTML +=
     `
     <tr id="${document.getElementsByName('descripcion').length} "name="filas">
         <th><img width="40" height="40" src="${misImagenes[Math.round(Math.random()*15)]}"></img></th>
@@ -38,21 +39,27 @@ function nuevaSolicitud()
      </tr>  
     `;
         if(document.getElementsByName('descripcion').length!==numeroDeFilas)
-        {borrarTexto("#textoNuevoUsuario");habilitarMenuNuevaSolicitud()}
+        {
+            borrarTexto("#textoNuevoUsuario");habilitarMenuNuevaSolicitud()
+    }
     
 }
 
-function  habilitarMenu()
-{
+function  habilitarMenu(){
+
     menu.classList.toggle("menuDesplegableUsuario");
     menu.classList.toggle("prueba");
 }
-function borrarTexto(id)
-{
+
+function borrarTexto(id){
+
     document.querySelector(id).value = ``
 }
-function botonEliminar()
-{
+
+
+
+function botonEliminar(){
+
     var checkboxes = document.getElementsByName('check');
     for (let i = 0; i <  checkboxes.length; i++) {
         var filas = document.getElementsByName('filas');
@@ -62,8 +69,9 @@ function botonEliminar()
             }
     }
 }
- function modificarSolicitudes()
-{
+
+ function modificarSolicitudes(){
+
     
     var descripcion = document.getElementsByName('descripcion');
     var checkboxes = document.getElementsByName('check');
@@ -77,14 +85,17 @@ function botonEliminar()
     }
 }
 
+//funcion para agregar el check dentro de los users
+
 function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('check')
-    checkboxes.forEach((item) => {
+    var checkboxs = document.getElementsByName('check')
+    checkboxs.forEach((item) => {
         if (item !== checkbox) item.checked = false
     })
 }
 
 function traer(){
+
       fetch('index.json')
       .then(res => res.json())
         .then(datos =>
@@ -92,12 +103,12 @@ function traer(){
                 tabla(datos);
              })
 }
-function tabla(datos)
-{
+
+function tabla(datos){
     
     var contadorTr =0;
     for (let valor of datos) {
-        datosFrontEnd.innerHTML +=
+        datosATraer.innerHTML +=
         `
         <tr id="${contadorTr} "name="filas">
             <th  ><img width="40" height="40" src="${misImagenes[Math.round(Math.random()*15)]}"></svg></th>
@@ -109,5 +120,6 @@ function tabla(datos)
         contadorTr++;
     }
 }
+
 cargarImg()
 console.log(misImagenes)

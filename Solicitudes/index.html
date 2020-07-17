@@ -19,6 +19,7 @@
             </div>
         </div>
         <div class="barraDeBotones">
+            <!-- Aca puedo agregar mas botones de acuerdo al uso que se pida -->
             <button id="nueva_solicitud" onclick="habilitarMenuNuevaSolicitud()">Nueva solicitud</button>
             <button id="modificar_solicitud" onclick="habilitarMenu()" >Modificar solicitud</button>
             <button id="eliminar_solicitud"  onclick="botonEliminar()">Eliminar solicitud</button>
@@ -27,10 +28,10 @@
             <table id="tablaSolicitudes">
                 <thead>
                     <tr>
-                        <th>Descripcion</th>
+                        <th>Descripción</th>
                         <th>Estado</th>
-                        <th>Fecha de emision</th>
-                        <th><!-- CHECKBOX --></th>
+                        <th>Fecha de emisión</th>
+                        <th><!-- CHECKBOXSS --></th>
                     </tr>  
                 </thead>  
                 <tbody id="datos_atraer">
@@ -45,14 +46,17 @@
                     <h4 class="solicitud">Nueva solicitud</h1>
                     <h3 >Fecha de emision:</h1>
                     <h2 id="fecha"></h1>
-                            <textarea id="textoNuevaSolicitud"  placeholder="Detalle"></textarea>
+                            <textarea id="textoNuevaSolicitud"  placeholder="inserte Su Solicitud"></textarea>
                             <input id="enviarSolicitud" type="submit" value="Enviar" onclick="nuevaSolicitud()">
             </div>
         </div>
 
         <div class="menuDesplegable">
-            <textarea id="textoSolicitud" name="editarTexto" placeholder="solicitud a cambiar"></textarea>
-            <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
+            <div class="modificarSolicitud">
+                <h5 id="textoModificar">Modificar Solicitud</h5>
+                <textarea id="textoSolicitud" name="editarTexto" placeholder="solicitud a cambiar"></textarea>
+                <input id="enviar" type="submit" value="Guardar" onclick="modificarSolicitudes()">
+            </div>
         </div>
             
             
