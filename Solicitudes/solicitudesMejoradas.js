@@ -15,7 +15,7 @@ function salir(){
 function habilitarMenuNuevaSolicitud(){
 
     habilitarMenuNuevaSolicitudes.classList.toggle("isNuevaSolicitud");
-    habilitarMenuNuevaSolicitudes.classList.toggle("prueba");
+    
 }
 
 
@@ -40,7 +40,7 @@ function nuevaSolicitud(){
 function  habilitarMenu(){
 
     menu.classList.toggle("menuDesplegable");
-    menu.classList.toggle("prueba");
+    
 }
 
 function borrarTexto(id){
