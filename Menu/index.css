@@ -47,13 +47,7 @@
     background:   #5CB760   ;
 }
 
- .barra > img{
-     
-    margin-left: 2%;
-    padding-left: 1%;
-    height: 100%;
-    opacity: 60%;
-}
+ 
 
 .barra > h1{
 
@@ -154,6 +148,13 @@ a{
     background: #313b99;
    
 }
+.barra > img{
+     
+    margin-left: 2%;
+    padding-left: 1%;
+    height: 100%;
+    opacity: 60%;
+}
 
 footer{
 
@@ -176,11 +177,6 @@ p{
     font-size: 130%;
 }
 
-a:hover{
-
-    color:#a2de96;
-    background:#3ca59d;
-}
 
   /* \\\\\\ ----> LA VERSION MOVIL ESTA DISEÑADA PARA UNA RESOLUCION DE 320 X 850  PX   <----////////     */
   @media all and (max-device-width: 480px){

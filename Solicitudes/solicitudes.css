@@ -164,10 +164,7 @@ tbody > tr {
     opacity: 0.0;
 
 }
-.solicitud{
-    margin-top: 60%;
-    left: 12%;
-}
+
 
 .modificarSolicitud{
 
@@ -227,10 +224,12 @@ tbody > tr {
 #textoNuevaSolicitud{
 
     position: relative;
+    display:block;
+    margin-top: 0%;
     width: 60%;
     height: 60%;
     left: 20%;
-    top: -142%;
+    top: 02%;
     resize: none;
     box-shadow: none;
     font-size: 180%;
@@ -243,26 +242,28 @@ tbody > tr {
     margin-left: 40%;
 }
 
-h4,h2,h3{
+h2,h3{
 
     display: inline-block;
-    top: 15%;
+    left: -2%;
+    top: -136%;
+    
+    /* top: 15%; */
 }
+
+/* .solicitud{
+    margin-top: -20%;
+    left: 12%;
+    
+} */
 
 h4{
-    top: -145%;
+    display: inline-block;
+    margin-top: -155%;
     position: relative;
-    margin-left: 28%;
-    font-size: 160%;
+    margin-left: 38%;
+    font-size: 130%;
 }
-
-h2, h3{
-    left: -2%;
-    /* margin-top: -10%; */
-    top: -136%;
-    position: relative;
-}
-
 
 h2{
     color: #3726cc;
@@ -349,9 +350,9 @@ h2{
     #textoNuevaSolicitud{
 
         width: 70%;
-        height: 50%;
+        height: 45%;
         left: 14%;
-        margin-top: 189%;
+        margin-top: -14%;
         
         
     }
@@ -363,13 +364,14 @@ h2{
 
     }
     h2{
-        left: 24%;
+        left: 34%;
         top: 15%;
     }
     h4{
-        top: -23%;
+        /* top: 23%; */
+        margin-top: 10%;
         position: relative;
-        margin-left: -1%;
+        margin-left: 15%;
         font-size: 160%;
     }
     #textoModificar{
@@ -378,7 +380,7 @@ h2{
 
     }
     #enviarSolicitud{
-
+        margin-top: 10%;
         width: 40%;
         height: 10%;
         font-size: 120%;

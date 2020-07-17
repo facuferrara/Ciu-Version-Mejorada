@@ -139,3 +139,4 @@ function tabla(datos){
 }
 
 cargarAvatar()
+showTime();

@@ -77,8 +77,13 @@
 }
 
 h4{
-    color: #3726cc;
-
+  color: #000000;
+  left: 70%;
+  top: -7%;
+  position: relative;
+}
+h3{
+  
 }
 
 .infoSuperior{
@@ -231,7 +236,7 @@ font-size: 50%;
   width: 62%;
   height: 60%;
   left: 20%;
-  top: 22%;
+  top: 10%;
   resize: none;
   box-shadow: none;
   font-size: 180%;
@@ -246,10 +251,10 @@ h2{
 #enviarUsuario{
 
   position: absolute;
-  width: 45%;
-  height: 10%;
-  left: 28%;
-  top: 85%;
+  width: 20%;
+  height:10% ;
+  left: 38%;
+  top: 88%;
   background: #5CB760;
   border: 1px solid #B4B0B0;
   box-sizing: border-box;
@@ -350,6 +355,11 @@ h2{
 
     width: 98%;
   }
+  #enviar{
+    width: 40%;
+    left: 30%;
+    top: 75%;
+  }
 
   #enviarUsuario{
     
@@ -360,12 +370,17 @@ h2{
     font-size: large;
   }
   #textoAModificar{
-    margin-left: 30%;
+    margin-left: 14%;
     margin-top: 20%;
     font-size: 130%;
   }
   h4{
-    background-color: #3726cc;
+    top: -2%;
+    left: 20%;
+  }
+  #textoNuevoUsuario{
+    width: 60%;
+    height: 50%;
   }
   
 }
