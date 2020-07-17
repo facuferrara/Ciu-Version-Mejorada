@@ -260,6 +260,11 @@ h2{
 /* \\\\\\ ----> LA VERSION MOVIL ESTA DISEÑADA PARA UNA RESOLUCION DE 320 X 850  PX   <----////////     */
 @media all and (max-device-width: 480px){
 
+  .img-logoUser{
+    background-repeat: no-repeat;
+    width: 50%;
+    left: -20%;
+  }
   .barra {
 
     margin: 0;
@@ -297,7 +302,7 @@ h2{
 
   .barra > h1{
     
-    left: -1%;
+    left: -3%;
     margin: 0;
     margin-left: 34%;
     font-size: medium;
